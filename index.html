@@ -6,6 +6,16 @@
     <title>DeluxCarMoto</title>
     <link rel="stylesheet" href="../DeluxCarMoto/assets/css/styles.css">
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const dropdown = document.querySelector(".dropdown");
+
+        dropdown.addEventListener("click", (e) => {
+            e.preventDefault();
+            dropdown.classList.toggle("open");
+        });
+    });
+</script>
 <body>
     <div class="navbar">
         <a href="index.html">
