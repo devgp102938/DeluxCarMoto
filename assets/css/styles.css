@@ -565,7 +565,7 @@ html{
         text-align: center;
     }
     .main {
-        min-height: 80vh;   
+        min-height: 100vh ;   
         padding: 10px;
         font-size: 14px;   
     }
