@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDROVER</title>
+    <link rel="stylesheet" href="../DeluxCarMoto/assets/css/styles.css">
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+     <div class="navbar">
+        <a href="index.html">
+            <div class="logo">
+                <img src="../DeluxCarMoto/assets/images/icons/logo.png" alt="LOGO" height="120px" width="150px">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li class="dropdown">
+                <a href="#">BRANDS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="brand-bmw.html">BMW</a></li>
+                        <li><a href="brand-mercedes.html">Mercedes</a></li>
+                        <li><a href="brand-bugatti.html">Bugatti</a></li>
+                        <li><a href="brand-ferrari.html">Ferrari</a></li>
+                        <li><a href="brand-Lamborghini.html">Lamborghini</a></li>
+                        <li><a href="brand-landrover.html">LandRover</a></li>
+                        <li><a href="brand-Porsche.html">Porche</a></li>
+                        <li><a href="brand-rollsroyce.html">RollsRoyce</a></li>
+                    </ul>
+            </li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="test.html">TEST DRIVE</a></li>
+        </ul>
+    </div>
+
+    <div class="brand-hero LandRover-hero">
+        <div class="brand-text">
+            <h1>LAND ROVER</h1>
+            <p>Above & Beyond</p>
+        </div>
+    </div>
+
+    <div class="brand-cars">
+        <h2>LAND ROVER MODELS</h2>
+        <div class="car-grid">
+            <div class="car-card" onclick="openPreview('defender 130')">
+                <img src="../DeluxCarMoto/assets/images/car/Land-Rover/defender 130.png" alt="defender 130">
+                <h3>Defender 130</h3>
+                <p>Design With Integrity</p>
+            </div>
+            <div class="car-card" onclick="openPreview('range rover autobiography')">
+                <img src="../DeluxCarMoto/assets/images/car/Land-Rover/range rover autobiography.avif" alt="range rover autobiography">
+                <h3>Range Rover Autobiography</h3>
+                <p>The Pinnacle of Luxury</p>
+            </div>
+            <div class="car-card" onclick="openPreview('range rover sport')">
+                <img src="../DeluxCarMoto/assets/images/car/Land-Rover/pre-range rover sport.avif" alt="range rover sport">
+                <h3>Range Rover Sport</h3>
+                <p>The Ultimate Performance SUV</p>
+            </div>
+            <div class="car-card" onclick="openPreview('range rover sv')">
+                <img src="../DeluxCarMoto/assets/images/car/Land-Rover/range rover sv.avif" alt="range rover sv">
+                <h3>Range Rover sv</h3>
+                <p>Bespoke Luxury Redefined</p>
+            </div>
+            <div class="car-card" onclick="openPreview('range rover velar')">
+                <img src="../DeluxCarMoto/assets/images/car/Land-Rover/range rover velar.avif" alt="range rover velar">
+                <h3>Range Rover Velar</h3>
+                <p>Design Meets Capability</p>
+            </div>
+            <div class="car-card" onclick="openPreview('land rover Discovery')">
+                <img src="../DeluxCarMoto/assets/images/car/Land-Rover/land rover Discovery.png" alt="land rover Discovery">
+                <h3>Land Rover Discovery</h3>
+                <p>The Family Adventure SUV</p>
+            </div>
+            <div class="car-card" onclick="openPreview('defender octa')">
+                <img src="../DeluxCarMoto/assets/images/car/Land-Rover/defender octa.png" alt="defender octa">
+                <h3>Defender octa</h3>
+                <p>Rugged Elegance</p>
+            </div> 
+        </div>
+    </div>
+
+    <div class="brand-info">
+        <div class="brand-info-content">
+             <h2>ABOUT LAND ROVER</h2>
+                <p>
+                    Land Rover is a British brand of four-wheel-drive, off-road capable vehicles, 
+                    now owned by the Indian company Tata Motors and part of Jaguar Land Rover (JLR). 
+                    The first Land Rover, designed by Maurice Wilks in 1947, debuted in 1948, based on a Jeep chassis and axle, 
+                    and was initially a utilitarian vehicle. The brand has since evolved to produce luxury SUVs, 
+                    with iconic models like the Range Rover (introduced in 1970) and the Discovery. 
+                </p>
+        </div>
+    </div>
+
+    <div id="car-preview" class="car-preview">
+    <div class="preview-content">
+        <span class="close-btn" onclick="closePreview()">&times;</span>
+        <img id="preview-img" src="" alt="Car Image">
+        <h2 id="preview-title"></h2>
+        <p id="preview-desc"></p><br>
+        <p id="preview-price"></p><br>
+        <a href="test.html" class="book-btn">Book Test Drive</a>
+    </div>
+    </div>
+
+     <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <a href="index.html"><img src="../DeluxCarMoto/assets/images/icons/logo.png" alt="LOGO" height="80px"></a>
+                <h2>DeluxCarMoto</h2>
+                <p>Your destination for luxury cars where passion meets performance. Drive your dream with the world's finest brands. And ours finest services</p>
+            </div>
+            <div class="footer-section links">
+                <h3>HELPFUL LINKS</h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="#">BRANDS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="test.html">TEST DRIVE</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DeluxCarMoto. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMBORGHINI</title>
+    <link rel="stylesheet" href="../DeluxCarMoto/assets/css/styles.css">
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+     <div class="navbar">
+        <a href="index.html">
+            <div class="logo">
+                <img src="../DeluxCarMoto/assets/images/icons/logo.png" alt="LOGO" height="120px" width="150px">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li class="dropdown">
+                <a href="#">BRANDS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="brand-bmw.html">BMW</a></li>
+                        <li><a href="brand-mercedes.html">Mercedes</a></li>
+                        <li><a href="brand-bugatti.html">Bugatti</a></li>
+                        <li><a href="brand-ferrari.html">Ferrari</a></li>
+                        <li><a href="brand-Lamborghini.html">Lamborghini</a></li>
+                        <li><a href="brand-landrover.html">LandRover</a></li>
+                        <li><a href="brand-Porsche.html">Porche</a></li>
+                        <li><a href="brand-rollsroyce.html">RollsRoyce</a></li>
+                    </ul>
+            </li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="test.html">TEST DRIVE</a></li>
+        </ul>
+    </div>
+
+    <div class="brand-hero Lamborghini-hero">
+        <div class="brand-text">
+            <h1>LAMBORGHINI</h1>
+            <p>Expect the Unexpected</p>
+        </div>
+    </div>
+
+    <div class="brand-cars">
+        <h2>LAMBORGHINI MODELS</h2>
+        <div class="car-grid">
+            <div class="car-card" onclick="openPreview('lamborghini centenario roadster')">
+                <img src="../DeluxCarMoto/assets/images/car/Lamborghini/lamborghini centenario roadster.jpg" alt="lamborghini centenario roadster">
+                <h3>lamborghini centenario roadster</h3>
+                <p>carbon fiber masterpiece</p>
+            </div>
+             <div class="car-card" onclick="openPreview('Lamborghini Sian FKP37')">
+                <img src="../DeluxCarMoto/assets/images/car//Lamborghini/Lamborghini Sian FKP37.avif" alt="Lamborghini Sian FKP37">
+                <h3>Lamborghini Sian FKP37</h3>
+                <p>hybrid power unleashed</p>
+            </div>
+             <div class="car-card" onclick="openPreview('lamborghini urus performante')">
+                <img src="../DeluxCarMoto/assets/images/car/Lamborghini/lamborghini urus performante.jpg" alt="lamborghini urus performante">
+                <h3>lamborghini urus performante</h3>
+                <p>the ultimate suv</p>
+            </div>
+             <div class="car-card" onclick="openPreview('Lamborghini Veneno')">
+                <img src="../DeluxCarMoto/assets/images/car/Lamborghini/Lamborghini Veneno.webp" alt="Lamborghini Veneno">
+                <h3>Lamborghini Veneno</h3>
+                <p>extreme speed and design</p>
+            </div>
+             <div class="car-card" onclick="openPreview('Lamborghini-Huracàn Sterrato')">
+                <img src="../DeluxCarMoto/assets/images/car/Lamborghini/Lamborghini-Huracàn Sterrato.jpg" alt="Lamborghini-Huracàn Sterrato">
+                <h3>Lamborghini-Huracàn Sterrato</h3>
+                <p>off-road supercar</p>
+            </div>
+             <div class="car-card" onclick="openPreview('Lamborghini-Huracan STO')">
+                <img src="../DeluxCarMoto/assets/images/car/Lamborghini/Lamborghini-Huracan STO.webp" alt="Lamborghini-Huracan STO">
+                <h3>Lamborghini-Huracan STO</h3>
+                <p>track-focused thrill</p>
+            </div>
+             <div class="car-card" onclick="openPreview('Lamborghini-Revuelto')">
+                <img src="../DeluxCarMoto/assets/images/car/Lamborghini/Lamborghini-Revuelto.webp" alt="Lamborghini-Revuelto">
+                <h3>Lamborghini-Revuelto</h3>
+                <p>hybrid innovation</p>
+            </div>
+             <div class="car-card" onclick="openPreview('Lamborghini-Temerario')">
+                <img src="../DeluxCarMoto/assets/images/car/Lamborghini/Lamborghini-Temerario.webp" alt="Lamborghini-Temerario">
+                <h3>Lamborghini-Temerario</h3>
+                <p>bold design statement</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brand-info">
+        <div class="brand-info-content">
+             <h2>ABOUT LAMBORGHINI</h2>
+                <p>
+                  Lamborghini is an Italian manufacturer of luxury super sports cars, 
+                  founded in 1963 by Ferruccio Lamborghini, and is currently based in Sant'Agata Bolognese, Italy.
+                  The company was created to compete with other luxury car brands like Ferrari and,
+                  is known for high-performance vehicles like the Countach, Diablo, and the first V12 super sports car, the 350 GT.
+                  Today, it produces a range of high-performance electrified vehicles, including the Revuelto, the Urus SE. 
+                </p>
+        </div>
+    </div>
+
+    <div id="car-preview" class="car-preview">
+    <div class="preview-content">
+        <span class="close-btn" onclick="closePreview()">&times;</span>
+        <img id="preview-img" src="" alt="Car Image">
+        <h2 id="preview-title"></h2>
+        <p id="preview-desc"></p><br>
+        <p id="preview-price"></p><br>
+        <a href="test.html" class="book-btn">Book Test Drive</a>
+    </div>
+    </div>
+
+     <div class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <a href="index.html"><img src="../DeluxCarMoto/assets/images/icons/logo.png" alt="LOGO" height="80px"></a>
+                <h2>DeluxCarMoto</h2>
+                <p>Your destination for luxury cars where passion meets performance. Drive your dream with the world's finest brands. And ours finest services</p>
+            </div>
+            <div class="footer-section links">
+                <h3>HELPFUL LINKS</h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="#">BRANDS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="test.html">TEST DRIVE</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DeluxCarMoto. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
