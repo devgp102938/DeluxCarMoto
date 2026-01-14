@@ -369,14 +369,24 @@ function closePreview() {
   document.getElementById("car-preview").style.display = "none";
 }
 
+function closePreview() {
+  document.getElementById("car-preview").style.display = "none";
+}
+
 const modal = document.getElementById("car-preview");
-const modalcontent = document.querySelector("preview-content");
+const modalcontent = document.querySelector(".preview-content");
 
-modal.addEventListener("click", function(){
+function outsideClose() {
   closePreview();
-});
+}
 
-modalcontent.addEventListener("click", function(e){
+modal.addEventListener("click", outsideClose);
+modal.addEventListener("touchstart", outsideClose);
+
+function stopClose(e) {
   e.stopPropagation();
-});
+}
+
+modalcontent.addEventListener("click", stopClose);
+modalcontent.addEventListener("touchstart", stopClose);
 
