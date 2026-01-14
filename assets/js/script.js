@@ -353,6 +353,7 @@ const cars = {
     price: "256 crore"
   }
 };
+
 function openPreview(carName) {
   const car = cars[carName];
   if (!car) return;
