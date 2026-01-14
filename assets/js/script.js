@@ -353,7 +353,6 @@ const cars = {
     price: "256 crore"
   }
 };
-
 function openPreview(carName) {
   const car = cars[carName];
   if (!car) return;
@@ -369,20 +368,9 @@ function closePreview() {
   document.getElementById("car-preview").style.display = "none";
 }
 
-const modal = document.getElementById("car-preview");
-const modalcontent = document.querySelector(".preview-content");
-
-function outsideClose() {
-  closePreview();
-}
-
-modal.addEventListener("click", outsideClose);
-modal.addEventListener("touchstart", outsideClose);
-
-function stopClose(e) {
-  e.stopPropagation();
-}
-
-modalcontent.addEventListener("click", stopClose);
-modalcontent.addEventListener("touchstart", stopClose);
-
+window.onclick = function(event) {
+  const modal = document.getElementById("car-preview");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
