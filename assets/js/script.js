@@ -108,7 +108,7 @@ const cars = {
     price: "61 crore"
   },
   "Bugatti Solitaire": {
-    img: "assets/images/car/Bugatti/pre-bugatti solitaire.jpg",
+    img: "assets/images/car/Bugatti/pre-Bugatti Solitaire.jpg",
     desc: "Bugatti Solitaire is an exclusive coachbuilding program for creating one-of-a-kind vehicles, with a maximum of two masterpieces per year, built upon existing powertrains and chassis. The first model, the Brouillard, features a sculpture-like, flowing design inspired by Ettore Bugatti's horse, a quad-turbo W16 engine, unique bodywork with custom carbon fiber, and a bespoke interior with elements like tartan fabrics and a glass roof.",
     price: "Price on request"
   },
@@ -363,10 +363,6 @@ function openPreview(carName) {
   document.getElementById("preview-desc").textContent = car.desc;
   document.getElementById("preview-price").textContent = "Price: " + car.price;
   document.getElementById("car-preview").style.display = "flex";
-}
-
-function closePreview() {
-  document.getElementById("car-preview").style.display = "none";
 }
 
 function closePreview() {

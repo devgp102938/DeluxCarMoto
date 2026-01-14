@@ -365,12 +365,14 @@ html{
 .car-preview{
     display:none;
     position: fixed;
+    inset: 0;
     top: 0; left: 0;
     width: 100%; height: 100%;
     background: rgba(0,0,0,0.8);
+    pointer-events: auto;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 9999;
 }
 .preview-content{
     background: linear-gradient(180deg, rgb(58, 56, 56),black,rgb(58, 56, 56));
@@ -578,5 +580,10 @@ html{
         line-height: 1.3;
     }
 }
-
+@media (hover: none) {
+    .car-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
 
