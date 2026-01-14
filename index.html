@@ -9,13 +9,14 @@
 </head>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        const dropdown = document.querySelector(".dropdown");
+    const dropdown = document.querySelector(".dropdown > a");
 
-        dropdown.addEventListener("click", (e) => {
-            e.preventDefault();
-            dropdown.classList.toggle("open");
-        });
+    dropdown.addEventListener("click", (e) => {
+        e.preventDefault();
+        dropdown.nextElementSibling.classList.toggle("open"); 
     });
+});
+
 </script>
 <body>
     <div class="navbar">
