@@ -326,7 +326,6 @@ html{
     border-radius: 10px;
     height: 350px;
     width: 300px;
-    transition: all 0.3s ease-in-out;
     cursor: pointer;
     overflow: hidden;
     padding: 10px 0px;
@@ -336,12 +335,13 @@ html{
     height: 200px;
     object-fit: cover;
     border-bottom: 2px solid gold;
+    transition: all 0.3s ease-in-out;
 }
 .car-card h3{
     color: gold;
     margin-top: 40px;
 }
-.car-card:hover{
+.car-card img:hover{
     transform: scale(1.07);
     box-shadow: 0 0px 20px gold;
 }
